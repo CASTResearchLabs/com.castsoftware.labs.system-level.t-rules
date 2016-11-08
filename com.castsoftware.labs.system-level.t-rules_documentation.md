@@ -132,12 +132,6 @@ Packaging, delivering and analyzing your source code is performed the same way a
 To get results:
 * run a new snapshot
 
-To avoid computing the MIPS Reduction index for applications that are not candidate to MIPS reduction:
-* open CAST Management Studio
-* edit the Dashboard Service(s) you are publishing the Snapshots of the N/A application(s)
-* select the Assessment Model tab
-* create an exclusion for the MIPS Reduction index and the N/A application(s)
-
 # What results can you expect?
 
 ## Objects
