@@ -731,8 +731,8 @@ Not used below:
  "firstRun": false
 }
  
-Default visualisation option settings via Web Services
-Get datasource key
+### Default visualisation option settings via Web Services
+#### Get datasource key
  
 http://127.0.0.1:3000/api/dataSources GET answer
 {
@@ -748,7 +748,8 @@ http://127.0.0.1:3000/api/dataSources GET answer
   ]
 }
 ==> fa9ab401 to use in next two WS queries and in PATCH WS query body
-Get sandbox ID
+
+#### Get sandbox ID
 http://127.0.0.1:3000/api/fa9ab401/sandbox GET answer
 {
   "visualization": {
@@ -1571,7 +1572,8 @@ http://127.0.0.1:3000/api/fa9ab401/sandbox GET answer
   }
 }
 ==> 10 to be uses in PATCH WS query body
-Patch sandbox 
+
+#### Patch sandbox 
 http://127.0.0.1:3000/api/fa9ab401/sandbox PATCH body
 {
   "visualization": {
