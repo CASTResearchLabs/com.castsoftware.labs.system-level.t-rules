@@ -9,7 +9,7 @@ This extension provides sample Transaction-level quality rules:
 
 To support drill-down and investigation into their findings, it also provides
 * an MS Excel spreadsheet
-* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing
+* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing \(cf. dedicated appendix [Appendix - Neo4J/Linkurious tooling](https://github.com/CASTResearchLabs/com.castsoftware.labs.system-level.t-rules/blob/master/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) \)
 
 # Approach
 Create Transaction-level – therefore system-level by nature – Quality Rules
