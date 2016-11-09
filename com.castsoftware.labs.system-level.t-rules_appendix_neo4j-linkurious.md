@@ -36,8 +36,8 @@ Start
 ### Nodes:
 Source code objects are
 * :Object for all regular objects found in the source code, with objectId, objectName, objectFullName, objectType, artifactNature, complexityLevel, fanIn, hitCount, url, ... properties
-** :Open for objets considered as open in the unbalanced capability :TRule
-** :Close for objets considered as open in the unbalanced capability :TRule
+  :Open for objets considered as open in the unbalanced capability :TRule
+  :Close for objets considered as open in the unbalanced capability :TRule
 * :TransactionHead for objects found in the source code that are considered as transaction entry-point (AFP context)
 * :TransactionData for objects found in the source code that are considered as transaction data entities (AFP context)
 * :CriticalViolation are :Object, :TransactionHead, and :TransactionData that are violating a :CriticalRule
