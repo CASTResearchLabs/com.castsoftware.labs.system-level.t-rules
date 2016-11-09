@@ -1,11 +1,11 @@
 # _com.castsoftware.labs.system-level.t-rules_ Description
 This extension provides sample Transaction-level quality rules:
 * Super-additivity per Technical Criterion
-** Avoid transactions with too many severe Efficiency - Memory, Network and Disk Space Management issues along the path
-** Avoid transactions with too many severe Efficiency - SQL and Data Handling Performance issues along the path
-** Avoid transactions with too many severe Programming Practices - Error and Exception Handling issues along the path
+  * Avoid transactions with too many severe Efficiency - Memory, Network and Disk Space Management issues along the path
+  * Avoid transactions with too many severe Efficiency - SQL and Data Handling Performance issues along the path
+  * Avoid transactions with too many severe Programming Practices - Error and Exception Handling issues along the path
 * Unbalanced Open-Close
-** Avoid transactions with the capability to open a resource but without the capability to close it
+  * Avoid transactions with the capability to open a resource but without the capability to close it
 
 To support drill-down and investigation into their findings, it also provides
 * an MS Excel spreadsheet
@@ -33,35 +33,35 @@ By looking for transaction with unbalanced capabilities such as
 
 As of this release, target JEE database resource open / close API:
 * JDBC
-** open: java.sql.DriverManager.getConnection(String)
-** close: java.sql.Connection.close()
+  * open: java.sql.DriverManager.getConnection(String)
+  * close: java.sql.Connection.close()
 * JDBC
-** open: java.sql.Connection.createStatement()
-** close: java.sql.Statement.close()
+  * open: java.sql.Connection.createStatement()
+  * close: java.sql.Statement.close()
 * JDBC
-** open: java.sql.Connection.prepareStatement(...)
-** close: java.sql.PreparedStatement.close()
+  * open: java.sql.Connection.prepareStatement(...)
+  * close: java.sql.PreparedStatement.close()
 * JDBC
-** open: java.sql.Connection.prepareCall(...)
-** close: java.sql.CallableStatement.close()
+  * open: java.sql.Connection.prepareCall(...)
+  * close: java.sql.CallableStatement.close()
 * JDBC
-** open: java.sql.PreparedStatement.executeQuery()
-** close: java.sql.ResultSet.close()
+  * open: java.sql.PreparedStatement.executeQuery()
+  * close: java.sql.ResultSet.close()
 * JPA
-** open: javax.persistence.Persistence.createEntityManagerFactory(String)
-** close: javax.persistence.EntityManagerFactory.close()
+  * open: javax.persistence.Persistence.createEntityManagerFactory(String)
+  * close: javax.persistence.EntityManagerFactory.close()
 * JPA
-** open:  javax.persistence.EntityManagerFactory.createEntityManager()
-** close:  javax.persistence.EntityManager.close()
+  * open:  javax.persistence.EntityManagerFactory.createEntityManager()
+  * close:  javax.persistence.EntityManager.close()
 * Hibernate
-** open: org.hibernate.SessionFactory.openSession()
-** close: org.hibernate.Session.close()
+  * open: org.hibernate.SessionFactory.openSession()
+  * close: org.hibernate.Session.close()
 * Hibernate
-** open: org.hibernate.cfg.Configuration.buildSessionFactory()
-** close: org.hibernate.SessionFactory.close()
+  * open: org.hibernate.cfg.Configuration.buildSessionFactory()
+  * close: org.hibernate.SessionFactory.close()
 * Spring
-** open: org.springframework.orm.hibernate3.SessionFactoryUtils.getSession(...)
-** close: org.springframework.orm.hibernate3.SessionFactoryUtils.closeSession(...)
+  * open: org.springframework.orm.hibernate3.SessionFactoryUtils.getSession(...)
+  * close: org.springframework.orm.hibernate3.SessionFactoryUtils.closeSession(...)
 
 ### why? 
 They find situations:
