@@ -207,13 +207,13 @@ Using "Drill-down TC T-Rules" tab, you get per rule
 * along with the objects from the transaction using an unbalanced open statement (displayed in "information" column)
 
 
-## Neo4j \/ Linkurious
+## Neo4j / Linkurious
 
 Pre-requisites:
 * implementation as detailed in dedicated appendix [Appendix - Neo4J/Linkurious tooling](/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) 
 
-### Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png) 
+### Neo4j / Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling
+![Neo4j / Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png) 
 Where
 * top node shows the super-additivity t-rule focussing on error and exception handling, linked to
 * the node (located to its 4:30) materialising the details of the violation, in turn linked to
@@ -221,8 +221,8 @@ Where
 * the objects within the transaction violating the severe error and exception handling rules
 
 
-### Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)  
+### Neo4j / Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance
+![Neo4j / Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)  
 Where
 * top node shows the super-additivity t-rule focussing on sql and data handling performance, linked to
 * the node (located to its 4:30) materialising the details of the violation, in turn linked to
@@ -230,8 +230,8 @@ Where
 * the objects within the transaction violating the severe sql and data handling performance rules
 
 
-### Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close
-![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png) 
+### Neo4j / Linkurious Drill-down - Unbalanced capabilities T-Rules - Open / Close
+![Neo4j / Linkurious Drill-down - Unbalanced capabilities T-Rules - Open / Close](/LK3.png) 
 Where
 * top node on the left hand side shows the unbalanced capability t-rule focussing on JEE database resource open/close, linked to
 * the node (located to its 6:00) materialising the details of the violation, in turn linked to
@@ -239,8 +239,8 @@ Where
 * the objects within the transaction with JEE database resource open capability wich is nowhere in the whole transaction matched by corresponding JEE data resource close capability
 
 
-### Neo4j \/ Linkurious Drill-down - Super-additivity and Unbalanced capabilities T-Rules
-![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)
+### Neo4j / Linkurious Drill-down - Super-additivity and Unbalanced capabilities T-Rules
+![Neo4j / Linkurious Drill-down - T-Rules](/LK4.png)
 Showing
 * 2 super-additivity t-rules focussing on error and exception handling and sql and data handling performance, along with their details
 * 1 unbalance capability t-rule focusing on JEE database resource open/close capabilities, along with its details
