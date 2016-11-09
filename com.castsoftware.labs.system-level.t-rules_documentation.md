@@ -9,7 +9,7 @@ This extension provides sample Transaction-level quality rules:
 
 To support drill-down and investigation into their findings, it also provides
 * an MS Excel spreadsheet
-* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing \(cf. dedicated appendix [Appendix - Neo4J/Linkurious tooling](/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) \)
+* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing 
 
 # Approach
 Create Transaction-level – therefore system-level by nature – Quality Rules
@@ -189,17 +189,25 @@ N/A
 
 ## Microsoft Excel
 
-![Microsoft Excel Drill-down - Super-additivity T-Rules](/MSE1.png)
+Pre-requisites:
+* ensure the existence of an ODBC (32bit) data source targeting the analysis service with the following name: PostgreSQL_AS
+* refresh the data connections
 
+Illustration | Description
+--------------------------
+![Microsoft Excel Drill-down - Super-additivity T-Rules](/MSE1.png) | Using "Drill-down TC T-Rules" tab, you get per rule the list of faulty transactions, identified by their form full name (with form ID as prefix), along with violated rules of the TC, grouped by severity (new severity mapping based on TC and rules aggregation weights and rules critical contribution flags) and the violating objects from the transaction
+![Microsoft Excel Drill-down - Unbalanced capabilities T-Rules](/MSE2.png)  | Using "Drill-down TC T-Rules" tab, you get per rule the list of faulty transactions, identified by their form full name (with form ID as prefix), along with the objects from the transaction using an unbalanced open statement (displayed in "information" column)
 
-![Microsoft Excel Drill-down - Unbalanced capabilities T-Rules](/MSE2.png)
 
 ## Neo4j \/ Linkurious
 
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png)
+Pre-requisites:
+* implementation as detailed in dedicated appendix [Appendix - Neo4J/Linkurious tooling](/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) 
 
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)
 
-![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png)
-
-![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)
+Illustration | Description
+--------------------------
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png) |  D
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)  | D
+![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png)  |  D
+![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)  |   D
