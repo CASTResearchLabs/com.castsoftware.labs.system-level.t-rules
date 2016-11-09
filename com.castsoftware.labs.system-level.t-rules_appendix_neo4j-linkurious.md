@@ -7,27 +7,29 @@ Neo4J querying language is cypher. Neo4J nodes have 0 to many :LABEL, and edges 
 Linkurious is a visualisation platform feeding on graph database servers, including Neo4J.
 
 ## Integration MO
-* update
-** delivered files
-*** 1.export_TRules.bat, 
-*** 2.import_TRules.bat, 
-*** 3.merge_and_index.TRules.bat, 
-*** 3.merge_and_index.TRules.cql
-** with 
-*** SQL connection, 
-*** directory information, 
-*** Neo4j database information,
-*** AED publishing URL (to support source code access)
-** Note: you can check/improve the SQL used for extraction in 1.export_TRules.sql
-* run in sequence
-** 1.export_TRules.bat, to extract required data from a Dashboard Service and an Analysis Service into CSV files
-** 2.import_TRules.bat, to create a new Neo4J database from nodes and edges defined in CSV files  
+Update
+* delivered files
+1.export_TRules.bat, 
+2.import_TRules.bat, 
+3.merge_and_index.TRules.bat, 
+3.merge_and_index.TRules.cql
+* with 
+SQL connection, 
+directory information, 
+Neo4j database information,
+AED publishing URL (to support source code access)
+* Note: you can check/improve the SQL used for extraction in 1.export_TRules.sql
+
+Run in sequence
+* 1.export_TRules.bat, to extract required data from a Dashboard Service and an Analysis Service into CSV files
+* 2.import_TRules.bat, to create a new Neo4J database from nodes and edges defined in CSV files  
 (warning: running 2.import_TRules.bat requires Neo4j to be stopped and that the Neo4J database doesn't exist yet), 
-** 3.merge_and_index.TRules.bat, to fine tune the Neo4J model and create index for improved performances 
+* 3.merge_and_index.TRules.bat, to fine tune the Neo4J model and create index for improved performances 
 (warning: running 3.merge_and_index.TRules.bat requires Neo4j to be stopped)
-* start 
-** Neo4j
-** Linkurious
+
+Start 
+* Neo4j
+* Linkurious
 
 ## Neo4j model
 
