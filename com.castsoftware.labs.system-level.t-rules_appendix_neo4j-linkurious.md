@@ -80,6 +80,248 @@ Semantic edges are
 * Module
 ** :Contains to target contained :Object
 
+### Samples
+* Sample properties of an :Object
+----------------------------------------------
+artifactNature
+Artifact
+ 
+complexityLevel
+Moderate
+ 
+evolutionStatus
+unchanged
+ 
+fanIn
+1
+ 
+hitCount
+8
+ 
+log2hitCount
+3.169925
+ 
+objectFullName
+org.owasp.webgoat.lessons.RoleBasedAccessControl.DeleteProfile.deleteEmployeeProfile
+ 
+objectId
+2941
+ 
+objectName
+deleteEmployeeProfile
+ 
+objectType
+Java Method
+ 
+url
+http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/2941/local-sites/1494040054/file-contents/164
+----------------------------------------------
+
+* Sample properties of an :TransactionHead
+----------------------------------------------
+artifactNature
+Artifact
+ 
+complexityLevel
+Moderate
+ 
+evolutionStatus
+added
+ 
+fanIn
+0
+ 
+hitCount
+1
+ 
+log2hitCount
+1
+ 
+objectFullName
+[C:\castms\Deploy\xxs\WebT\WebT-SRC\webgoat\lessons\SQLInjection\ListStaffSQLI.jsp]
+ 
+objectId
+65849
+ 
+objectName
+ListStaffSQLI.jsp
+ 
+objectType
+eFile
+ 
+url
+http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/65849/local-sites/1494040054/file-contents/3335
+----------------------------------------------
+
+* Sample properties of an :TransactionData
+----------------------------------------------
+artifactNature
+non-Artifact
+ 
+complexityLevel
+N/A
+ 
+evolutionStatus
+unchanged
+ 
+fanIn
+68
+ 
+hitCount
+4792
+ 
+log2hitCount
+12.226713
+ 
+objectFullName
+CASTDB.WEBGOAT_GUEST.EMPLOYEE
+ 
+objectId
+3890
+ 
+objectName
+EMPLOYEE
+ 
+objectType
+Oracle table
+ 
+url
+http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/3890/local-sites/1494040054/file-contents/75
+----------------------------------------------
+
+* Sample properties of a :TRule
+----------------------------------------------
+EffCritical
+1
+ 
+VIEffContribution
+81
+ 
+objectCount
+16
+ 
+ruleId
+1000102
+ 
+ruleName
+Avoid transactions with too many severe Efficiency - SQL and Data Handling Performance issues along the path
+ 
+ruleType
+super-additivity
+----------------------------------------------
+
+* Sample properties of a :TRuled
+----------------------------------------------
+EffCritical
+1
+ 
+VIEffContribution
+81
+ 
+objectCount
+2
+ 
+ruleId
+1580
+ 
+ruleName
+Avoid using execute immediate
+ 
+severity
+5
+ 
+superAdditivityTC
+Efficiency - SQL and Data Handling Performance
+----------------------------------------------
+
+* Sample properties of a :SecurityRule
+----------------------------------------------
+SecuCritical
+1
+ 
+VISecuContribution
+90
+ 
+objectCount
+13
+ 
+ruleId
+7742
+ 
+ruleName
+Avoid SQL injection vulnerabilities ( CWE-89 )
+----------------------------------------------
+
+* Sample properties of a :Transaction
+----------------------------------------------
+objectCount
+8
+ 
+transactionFullName
+[C:\castms\Deploy\xxs\WebT\WebT-SRC\webgoat\lesson_plans\UsefulTools.html]
+ 
+transactionId
+65630
+ 
+transactionName
+UsefulTools.html
+----------------------------------------------
+
+* Sample properties of a :Module
+----------------------------------------------
+moduleId
+4
+ 
+moduleName
+WebGoat/WebT/WebT-SRC content
+ 
+objectCount
+2885
+----------------------------------------------
+
+* Sample properties of a :Detail
+----------------------------------------------
+detailId
+8023_64135 
+ 
+detailName
+Detail (Avoid hiding attributes)-(64135 org.owasp.webgoat.lessons.Phishing.DEFAULT_RANKING)
+----------------------------------------------
+
+* Sample properties of a :Group
+----------------------------------------------
+groupId
+1193
+ 
+groupName
+Group (Avoid Too Many Copy Pasted Artifacts)-(1193)
+----------------------------------------------
+
+* Sample properties of a :Path
+----------------------------------------------
+pathId
+584
+ 
+pathName
+Path (Avoid SQL injection vulnerabilities ( CWE-89 ))-(584)
+----------------------------------------------
+
+* Sample properties of a :References
+----------------------------------------------
+callType
+Access(exec)
+----------------------------------------------
+
+* Sample properties of a :ImplementedBy from a :Path
+----------------------------------------------
+stepIndex
+3
+----------------------------------------------
+
+
+
+
+
 ## Linkurious (1.4.2) configuration
 ### Objectives
 Detailed configuration will control default
