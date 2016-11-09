@@ -9,7 +9,7 @@ This extension provides sample Transaction-level quality rules:
 
 To support drill-down and investigation into their findings, it also provides
 * an MS Excel spreadsheet
-* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing \(cf. dedicated appendix [Appendix - Neo4J/Linkurious tooling](https://github.com/CASTResearchLabs/com.castsoftware.labs.system-level.t-rules/blob/master/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) \)
+* an extraction toolkit to feed Neo4j graph database and allow Linkurious-assisted browsing \(cf. dedicated appendix [Appendix - Neo4J/Linkurious tooling](/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) \)
 
 # Approach
 Create Transaction-level – therefore system-level by nature – Quality Rules
@@ -169,3 +169,37 @@ Therefore, you can expect grade variations for their parents business criteria.
 
 # Limitations
 N/A
+
+
+# Illustrations
+
+## CED
+
+![CED Quality Model Drill-down](/CED1.png)
+
+
+## AAD
+
+![AAD home page](/AAD1.png)
+
+
+## AED
+
+![AED Quality Model Drill-down](/AED1.png)
+
+## Microsoft Excel
+
+![Microsoft Excel Drill-down - Super-additivity T-Rules](/MSE1.png)
+
+
+![Microsoft Excel Drill-down - Unbalanced capabilities T-Rules](/MSE2.png)
+
+## Neo4j \/ Linkurious
+
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png)
+
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)
+
+![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png)
+
+![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)
