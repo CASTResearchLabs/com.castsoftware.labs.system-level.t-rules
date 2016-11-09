@@ -193,10 +193,18 @@ Pre-requisites:
 * ensure the existence of an ODBC (32bit) data source targeting the analysis service with the following name: PostgreSQL_AS
 * refresh the data connections
 
-Illustration | Description
---------------------------
-![Microsoft Excel Drill-down - Super-additivity T-Rules](/MSE1.png) | Using "Drill-down TC T-Rules" tab, you get per rule the list of faulty transactions, identified by their form full name (with form ID as prefix), along with violated rules of the TC, grouped by severity (new severity mapping based on TC and rules aggregation weights and rules critical contribution flags) and the violating objects from the transaction
-![Microsoft Excel Drill-down - Unbalanced capabilities T-Rules](/MSE2.png)  | Using "Drill-down TC T-Rules" tab, you get per rule the list of faulty transactions, identified by their form full name (with form ID as prefix), along with the objects from the transaction using an unbalanced open statement (displayed in "information" column)
+### Microsoft Excel Drill-down - Super-additivity T-Rules
+![Microsoft Excel Drill-down - Super-additivity T-Rules](/MSE1.png) 
+Using "Drill-down TC T-Rules" tab, you get per rule
+* the list of faulty transactions, identified by their form full name (with form ID as prefix),
+* along with violated rules of the TC, grouped by severity (new severity mapping based on TC and rules aggregation weights and rules critical contribution flags)
+* and the violating objects from the transaction
+
+### Microsoft Excel Drill-down - Unbalanced capabilities T-Rules
+![Microsoft Excel Drill-down - Unbalanced capabilities T-Rules](/MSE2.png)  
+Using "Drill-down TC T-Rules" tab, you get per rule
+* the list of faulty transactions, identified by their form full name (with form ID as prefix),
+* along with the objects from the transaction using an unbalanced open statement (displayed in "information" column)
 
 
 ## Neo4j \/ Linkurious
@@ -204,10 +212,36 @@ Illustration | Description
 Pre-requisites:
 * implementation as detailed in dedicated appendix [Appendix - Neo4J/Linkurious tooling](/com.castsoftware.labs.system-level.t-rules_appendix_neo4j-linkurious.md) 
 
+### Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png) 
+Where
+* top node shows the super-additivity t-rule focussing on error and exception handling, linked to
+* the node (located to its 4:30) materialising the details of the violation, in turn linked to
+* the next 7 nodes representing the severe error and exception handling rules with violations in the transaction displayed vertically on the left hand side, in turn linked to
+* the objects within the transaction violating the severe error and exception handling rules
 
-Illustration | Description
---------------------------
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - Error and Exception handling](/LK1.png) |  D
-![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)  | D
-![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png)  |  D
-![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)  |   D
+
+### Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance
+![Neo4j \/ Linkurious Drill-down - Super-additivity T-Rules - SQL and data handling performance](/LK2.png)  
+Where
+* top node shows the super-additivity t-rule focussing on sql and data handling performance, linked to
+* the node (located to its 4:30) materialising the details of the violation, in turn linked to
+* the next 7 nodes representing the severe sql and data handling performance rules with violations in the transaction displayed vertically on the left hand side, in turn linked to
+* the objects within the transaction violating the severe sql and data handling performance rules
+
+
+### Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close
+![Neo4j \/ Linkurious Drill-down - Unbalanced capabilities T-Rules - Open \/ Close](/LK3.png) 
+Where
+* top node on the left hand side shows the unbalanced capability t-rule focussing on JEE database resource open/close, linked to
+* the node (located to its 6:00) materialising the details of the violation, in turn linked to
+* the header of the transaction featuring the issue and
+* the objects within the transaction with JEE database resource open capability wich is nowhere in the whole transaction matched by corresponding JEE data resource close capability
+
+
+### Neo4j \/ Linkurious Drill-down - Super-additivity and Unbalanced capabilities T-Rules
+![Neo4j \/ Linkurious Drill-down - T-Rules](/LK4.png)
+Showing
+* 2 super-additivity t-rules focussing on error and exception handling and sql and data handling performance, along with their details
+* 1 unbalance capability t-rule focusing on JEE database resource open/close capabilities, along with its details
+
