@@ -9,15 +9,15 @@ Linkurious is a visualisation platform feeding on graph database servers, includ
 ## Integration MO
 Update
 * delivered files
-1.export_TRules.bat, 
-2.import_TRules.bat, 
-3.merge_and_index.TRules.bat, 
-3.merge_and_index.TRules.cql
-* with 
-SQL connection, 
-directory information, 
-Neo4j database information,
-AED publishing URL (to support source code access)
+  * 1.export_TRules.bat
+  * 2.import_TRules.bat
+  * 3.merge_and_index.TRules.bat
+  * 3.merge_and_index.TRules.cql
+* with
+  * SQL connection
+  * directory information
+  * Neo4j database information
+  * AED publishing URL (to support source code access)
 * Note: you can check/improve the SQL used for extraction in 1.export_TRules.sql
 
 Run in sequence
@@ -36,22 +36,22 @@ Start
 ### Nodes:
 Source code objects are
 * :Object for all regular objects found in the source code, with objectId, objectName, objectFullName, objectType, artifactNature, complexityLevel, fanIn, hitCount, url, ... properties
-  :Open for objets considered as open in the unbalanced capability :TRule
-  :Close for objets considered as open in the unbalanced capability :TRule
+  * :Open for objets considered as open in the unbalanced capability :TRule
+  * :Close for objets considered as open in the unbalanced capability :TRule
 * :TransactionHead for objects found in the source code that are considered as transaction entry-point (AFP context)
 * :TransactionData for objects found in the source code that are considered as transaction data entities (AFP context)
 * :CriticalViolation are :Object, :TransactionHead, and :TransactionData that are violating a :CriticalRule
 
 Semantic objects are
 * :Rule for all quality rules
-** :TRule for Labs' T-Rules (i.e., transaction-level rules)
-** :TRuled for quality rules that are taken into account in super-additivity :TRule (i.e., severe enough in health factors and technical criteria covered by the :TRule)
-** :CriticalRule for quality rules with the critical contribution option set in a technical criterion
-** :SecurityRule for quality rules contributing to Security health factor
-** :RobustnessRule for quality rules contributing to Robustness health factor
-** :EfficiencyRule for quality rules contributing to Efficiency health factor
-** :ChangeabilityRule for quality rules contributing to Changeability health factor
-** :TransferabilityRule for quality rules contributing to Transferability health factor
+  * :TRule for Labs' T-Rules (i.e., transaction-level rules)
+  * :TRuled for quality rules that are taken into account in super-additivity :TRule (i.e., severe enough in health factors and technical criteria covered by the :TRule)
+  * :CriticalRule for quality rules with the critical contribution option set in a technical criterion
+  * :SecurityRule for quality rules contributing to Security health factor
+  * :RobustnessRule for quality rules contributing to Robustness health factor
+  * :EfficiencyRule for quality rules contributing to Efficiency health factor
+  * :ChangeabilityRule for quality rules contributing to Changeability health factor
+  * :TransferabilityRule for quality rules contributing to Transferability health factor
 * :Transaction for all transactions (AFP context)
 * :Module for all AIP module
 
@@ -67,24 +67,24 @@ Source code edges
 
 Semantic edges are
 * Rule
-** :Involves to target the :Object, :TransactionHead, and :TransactionData in violation
-** :Impacts to identify :Transaction with violations from the :Rule 
-** :Summarizes to identify the :Rule whose severe violations within the same :Transaction creates a violation to the :TRule
-** :Identifies to identify the :Detail, :Group, or :Path violation information
+  * :Involves to target the :Object, :TransactionHead, and :TransactionData in violation
+  * :Impacts to identify :Transaction with violations from the :Rule
+  * :Summarizes to identify the :Rule whose severe violations within the same :Transaction creates a violation to the :TRule
+  * :Identifies to identify the :Detail, :Group, or :Path violation information
 * Violation information
-** :Reports to target associated :Object
-** :ImplementedBy to target contained :Object with stepIndex property providing the sequence
-** :Groups to target contained :Object
+  * :Reports to target associated :Object
+  * :ImplementedBy to target contained :Object with stepIndex property providing the sequence
+  * :Groups to target contained :Object
 * Transaction
-** :ImplementedBy to target implementing :Object
-** :AccessesDataFrom to target :TransactionData
-** :StartsWith to target the one :TransactionHead
+  * :ImplementedBy to target implementing :Object
+  * :AccessesDataFrom to target :TransactionData
+  * :StartsWith to target the one :TransactionHead
 * Module
-** :Contains to target contained :Object
+  * :Contains to target contained :Object
 
 ### Samples
 * Sample properties of an :Object
-----------------------------------------------
+```
 artifactNature
 Artifact
  
@@ -117,10 +117,10 @@ Java Method
  
 url
 http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/2941/local-sites/1494040054/file-contents/164
-----------------------------------------------
+```
 
 * Sample properties of an :TransactionHead
-----------------------------------------------
+```
 artifactNature
 Artifact
  
@@ -153,10 +153,10 @@ eFile
  
 url
 http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/65849/local-sites/1494040054/file-contents/3335
-----------------------------------------------
+```
 
 * Sample properties of an :TransactionData
-----------------------------------------------
+```
 artifactNature
 non-Artifact
  
@@ -189,10 +189,10 @@ Oracle table
  
 url
 http://localhost:8080/CAST-AAD-AED/engineering/source.html#AED/applications/3/snapshots/11/components/3890/local-sites/1494040054/file-contents/75
-----------------------------------------------
+```
 
 * Sample properties of a :TRule
-----------------------------------------------
+```
 EffCritical
 1
  
@@ -210,10 +210,10 @@ Avoid transactions with too many severe Efficiency - SQL and Data Handling Perfo
  
 ruleType
 super-additivity
-----------------------------------------------
+```
 
 * Sample properties of a :TRuled
-----------------------------------------------
+```
 EffCritical
 1
  
@@ -234,10 +234,10 @@ severity
  
 superAdditivityTC
 Efficiency - SQL and Data Handling Performance
-----------------------------------------------
+```
 
 * Sample properties of a :SecurityRule
-----------------------------------------------
+```
 SecuCritical
 1
  
@@ -252,10 +252,10 @@ ruleId
  
 ruleName
 Avoid SQL injection vulnerabilities ( CWE-89 )
-----------------------------------------------
+```
 
 * Sample properties of a :Transaction
-----------------------------------------------
+```
 objectCount
 8
  
@@ -267,10 +267,10 @@ transactionId
  
 transactionName
 UsefulTools.html
-----------------------------------------------
+```
 
 * Sample properties of a :Module
-----------------------------------------------
+```
 moduleId
 4
  
@@ -279,46 +279,46 @@ WebGoat/WebT/WebT-SRC content
  
 objectCount
 2885
-----------------------------------------------
+```
 
 * Sample properties of a :Detail
-----------------------------------------------
+```
 detailId
 8023_64135 
  
 detailName
 Detail (Avoid hiding attributes)-(64135 org.owasp.webgoat.lessons.Phishing.DEFAULT_RANKING)
-----------------------------------------------
+```
 
 * Sample properties of a :Group
-----------------------------------------------
+```
 groupId
 1193
  
 groupName
 Group (Avoid Too Many Copy Pasted Artifacts)-(1193)
-----------------------------------------------
+```
 
 * Sample properties of a :Path
-----------------------------------------------
+```
 pathId
 584
  
 pathName
 Path (Avoid SQL injection vulnerabilities ( CWE-89 ))-(584)
-----------------------------------------------
+```
 
 * Sample properties of a :References
-----------------------------------------------
+```
 callType
 Access(exec)
-----------------------------------------------
+```
 
 * Sample properties of a :ImplementedBy from a :Path
-----------------------------------------------
+```
 stepIndex
 3
-----------------------------------------------
+```
 
 
 

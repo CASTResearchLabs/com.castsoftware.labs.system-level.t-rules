@@ -117,7 +117,7 @@ N/A
 Please see:  [Extension Link Installation](http://doc.castsoftware.com/display/DOCEXT/Extension+download+and+installation)
 
 The installation steps are the following:
-* download the extension through the CAST Extension Downloader
+* download the extension through the CAST Extension Downloader using the https://extend.castsoftware.com:443/labs download server
 * open Server Manager 8.1+
 * select the existing set of databases to update / install a new set of databases
 * manage extensions of the existing set of database / follow the installation wizard up to the manage extension pane
@@ -150,12 +150,12 @@ List of new Quality Rules:
 ## Technical Criteria
 New quality rules results contributes to the following Technical Criteria:
 * Efficiency - SQL and data handling performance
-** Avoid transactions with too many severe Efficiency - SQL and Data Handling Performance issues along the path
+  * Avoid transactions with too many severe Efficiency - SQL and Data Handling Performance issues along the path
 * Efficiency - Memory, network, and disk space management
-** Avoid transactions with too many severe Efficiency - Memory, Network and Disk Space Management issues along the path
-** Avoid transactions with the capability to open a resource but without the capability to close it
+  * Avoid transactions with too many severe Efficiency - Memory, Network and Disk Space Management issues along the path
+  * Avoid transactions with the capability to open a resource but without the capability to close it
 * Programming Practices - Error and Exception Handling
-** Avoid transactions with too many severe Programming Practices - Error and Exception Handling issues along the path
+  * Avoid transactions with too many severe Programming Practices - Error and Exception Handling issues along the path
 
 Therefore, you can expect grade variations.
 
